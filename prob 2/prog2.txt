@@ -1,0 +1,44 @@
+#my idle wasnt working....
+from itertools import permutations
+
+
+num = input("number of char")
+
+a=[]
+
+val=[]
+
+perm=[]
+
+j=0
+
+array=['']
+
+print ("input char")
+
+
+
+for i in range(int(num)):
+
+    a.append(input())
+
+    val.append(a[i])
+
+print(val)
+
+perm=(list(permutations(val)))
+
+
+print("the string")
+
+arr = input()
+
+for i in range(len(perm)):
+
+    array.append(perm[i][j]+perm[i][j+1]+perm[i][j+2])
+
+array=(array.sort()) 
+
+array.pop(0)
+
+array.index(arr)

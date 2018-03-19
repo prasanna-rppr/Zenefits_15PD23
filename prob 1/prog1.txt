@@ -1,0 +1,15 @@
+class tree(object):
+  def __init__(self):
+    self.left=None
+    self.right=None
+    self.data=None
+
+root=tree()
+r=input()
+root.data=r
+root.left=tree()
+root.left=l
+root.left.data="left"
+root.right=r
+root.right=tree()
+root.right.data="right"
